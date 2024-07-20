@@ -386,6 +386,7 @@ static std::pair<std::string, std::string> get_file_attributes (const std::strin
 	std::vector<std::string>	command;
 	command.push_back("git");
 	command.push_back("check-attr");
+	command.push_back("-z");
 	command.push_back("filter");
 	command.push_back("diff");
 	command.push_back("--");
